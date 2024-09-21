@@ -1,10 +1,10 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
-import Sobre from "./pages/Sobre";
-import Indicacoes from "./pages/Indicacoes";
-import Contatos from "./pages/Contatos";
-import Page404 from "./pages/Page404";
-import PageBase from "./pages/PageBase";
+import Home from "./Pages/Home";
+import Sobre from "./Pages/Sobre";
+import Indicacoes from "./Pages/Indicacoes";
+import Contatos from "./Pages/Contatos";
+import Page404 from "./Pages/Page404";
+import PageBase from "./Pages/PageBase";
 
 function AppRoutes() {
   return (
