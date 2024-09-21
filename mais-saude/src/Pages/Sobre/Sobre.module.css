@@ -1,37 +1,48 @@
 .sobre {
-    width: 100%;
-    min-height: 85vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-block: 40px;
-  }
-  
-  .medicos {
-    width: 450px;
-    height: 200;
-    padding: 1rem;
-  }
-  
+  width: 100%;
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-block: 40px;
+}
+
+.medicos {
+  width: 450px;
+  height: 200;
+  padding: 1rem;
+}
+
+.bio {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.bio span {
+  color: var(--red);
+  font-weight: bold;
+}
+
+.bio strong {
+  color: var(--secondary);
+  font-weight: bold;
+}
+
+.texto h2,
+p {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
   .bio {
-    display: flex;
-    align-items: center;
-    gap: 3rem;
-    margin-bottom: 1.5rem;
+    flex-direction: column;
+    padding-inline: 20px;
+    gap: 1rem;
   }
-  
-  .bio span {
-    color: var(--red);
-    font-weight: bold;
+  .medicos {
+    max-width: 50%;
   }
-  
-  .bio strong {
-    color: var(--secondary);
-    font-weight: bold;
-  }
-  
-  .texto h2,
-  p {
-    margin-bottom: 1rem;
-  }
+}
