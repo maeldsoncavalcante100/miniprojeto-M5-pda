@@ -19,7 +19,7 @@ function Header() {
       >
         <Link to="/">Home</Link>
         <Link to="/sobre">Sobre</Link>
-        <Link to="/indicacoes">Idicações</Link>
+        <Link to="/indicacoes">Indicações</Link>
         <Link to="/contatos">Contato</Link>
       </nav>
       <div className={styles.menuButton} onClick={toggleMenu}>
