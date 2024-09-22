@@ -9,7 +9,7 @@ function Card({ name, description, price, link }) {
     <section className={styles.card}>
       <h3>{name}</h3>
       <p>{description}</p>
-      <p className={styles.price}>${price}</p>
+      <span className={styles.price}>${price}</span>
       <div className={styles.card_footer}>
         <div className={styles.card_icones}>
           <IoStar />
