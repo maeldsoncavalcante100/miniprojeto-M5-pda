@@ -1,23 +1,26 @@
 .home {
   width: 100%;
   min-height: 90vh;
-
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
 
-.home img {
-  height: 350px;
+.apresentacao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-.home p {
+.apresentacao p {
   font-size: 2.5rem;
   font-weight: bold;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
-.home span {
+.apresentacao span {
   color: var(--red);
 }
 
@@ -33,6 +36,7 @@
   align-items: center;
   justify-content: center;
   text-decoration: none;
+  margin-top: 1.5rem;
 }
 
 .btn_red {
@@ -43,6 +47,11 @@
 .btn_red:hover {
   background-color: var(--primary);
   transition: all 0.5s;
+}
+
+.img_home {
+  height: 350px;
+  margin-left: 2rem;
 }
 
 @media (max-width: 768px) {
