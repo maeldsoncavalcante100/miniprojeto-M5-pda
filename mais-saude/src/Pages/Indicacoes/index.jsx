@@ -37,7 +37,7 @@ function Indicacoes() {
           ))}
         </section>
       ) : (
-        <p>Carregando repositórios...</p>
+        <p>Carregando livros...</p>
       )}
     </section>
   );
