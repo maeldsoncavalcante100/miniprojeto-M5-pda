@@ -1,24 +1,22 @@
-import axios from 'axios'
 import { useEffect, useState } from "react";
 import Card from "../../components/Cards";
 import styles from "./Indicacoes.module.css";
+import buscarLivros from "../../services/livrosService";
 
 function Indicacoes() {
   const [livros, setLivros] = useState([]);
 
   useEffect(() => {
-    const buscarLivros = async () => {
+    const carregarLivros = async () => {
       try {
-        const response = await axios.get(
-          "https://projeto-final-m4-pda.onrender.com/livros"
-        );
-        setLivros(response.data);
+        const data = await buscarLivros();
+        setLivros(data);
       } catch (error) {
-        console.error("Erro ao buscar os repositórios:", error);
+        console.error("Erro ao buscar os livros:", error);
       }
     };
 
-    buscarLivros();
+    carregarLivros();
   }, []);
 
   return (
